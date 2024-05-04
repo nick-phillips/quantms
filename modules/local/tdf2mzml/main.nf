@@ -11,7 +11,6 @@ process TDF2MZML {
 
     output:
     tuple val(meta), path("*.mzML"), emit: mzmls_converted
-    tuple val(meta), path("*.d"),   emit: dotd_files
     path "versions.yml",   emit: version
     path "*.log",   emit: log
 
